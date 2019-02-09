@@ -1,0 +1,12 @@
+1. Compile and run
+
+jayanti@KEDAR:>vi HelloWorld.java
+jayanti@KEDAR:>javac HelloWorld.java 
+jayanti@KEDAR:>ls
+HelloWorld.class HelloWorld.java
+jayanti@KEDAR:>java HelloWorld
+Hello, World
+
+2. List the modules 
+
+java --list-modules
