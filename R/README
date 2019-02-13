@@ -1,0 +1,72 @@
+1. R can be used either with R commeand prompt which can be invoked with :
+
+$R
+
+or can be run from a script with :
+
+$Rscript hello.r
+
+2. There is a lot of help available which can be found in one of the 
+following ways:
+
+a) If we want to know more about the function 'sum' we can give the 
+following input to 'R' command prompt :
+
+> ?sum
+> ?read.table
+
+
+b) Help option also works well :
+
+> help(sum)
+help.search("data input")
+
+c)  The find function tells you what package something
+is in:
+
+> find("mean")
+[1] "package:base"
+
+d)  apropos returns a character vector giving the names of all objects in the search list that match your
+(potentially partial) enquiry:
+> apropos("mean")
+ [1] ".colMeans"     ".rowMeans"     "colMeans"      "kmeans"       
+ [5] "mean"          "mean.Date"     "mean.default"  "mean.difftime"
+ [9] "mean.POSIXct"  "mean.POSIXlt"  "rowMeans"      "weighted.mean"
+
+we can find more about a specific function with :
+> help(colMeans 
+
+e) Worked examples of functions
+> example(lm)
+
+f) Demonstrations of R functions
+
+demo(persp)
+demo(graphics)
+demo(Hershey)
+demo(plotmath)
+
+
+3. Smallest code to plot :
+
+# create Gaussian data 
+x <- stats::rnorm(1000)
+
+# set the name of the output file 
+pdf(file="myplot.pdf")
+
+# plot 
+plot(x)
+
+5. CTRL-L clear space
+
+6. Clear all the variables 
+
+
+7. Statistics 
+r is the generic prefix for random variable generator such as runif(), rnorm().
+d is the generic prefix for the probability density function such as dunif(), dnorm().
+p is the generic prefix for the cumulative density function such as punif(), pnorm().
+q is the generic prefix for the quantile function such as qunif(), qnorm().
+
